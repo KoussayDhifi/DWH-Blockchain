@@ -1,0 +1,702 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/4/2025 9:01:37 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="G15-YASS"
+  DTS:CreatorName="G15-YASS\yassi"
+  DTS:DTSID="{417FD137-B84B-4319-868D-35AE1A13839B}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5685.2"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{FC209070-8DF3-43E2-92EB-3269F217372D}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Load StgPriceDaily"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{C8079594-2DEA-49CF-8EF8-82744ED34B62}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Load StgPriceDaily">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Load StgPriceDaily\Price"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1033"
+              name="Price"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load StgPriceDaily\Price.Connections[FlatFileConnection]"
+                  connectionManagerID="{1AC02A96-8B18-493C-93FF-F433D9FB4F04}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.price]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[date]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[date]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[date]"
+                      name="date"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[open]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[open]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[open]"
+                      name="open"
+                      scale="8"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[high]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[high]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[high]"
+                      name="high"
+                      scale="8"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[low]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[low]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[low]"
+                      name="low"
+                      scale="8"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[close]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[close]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[close]"
+                      name="close"
+                      scale="8"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[volume]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[volume]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[volume]"
+                      name="volume"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[quote_volume]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[quote_volume]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[quote_volume]"
+                      name="quote_volume"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[trades]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[trades]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[trades]"
+                      name="trades"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[taker_buy_volume]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[taker_buy_volume]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[taker_buy_volume]"
+                      name="taker_buy_volume"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[taker_buy_quote]"
+                      dataType="decimal"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[taker_buy_quote]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[taker_buy_quote]"
+                      name="taker_buy_quote"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[coin]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[coin]"
+                      length="50"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[coin]"
+                      name="coin"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[date]"
+                      dataType="dbDate"
+                      name="date" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[open]"
+                      dataType="decimal"
+                      name="open"
+                      scale="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[high]"
+                      dataType="decimal"
+                      name="high"
+                      scale="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[low]"
+                      dataType="decimal"
+                      name="low"
+                      scale="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[close]"
+                      dataType="decimal"
+                      name="close"
+                      scale="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[volume]"
+                      dataType="decimal"
+                      name="volume" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[quote_volume]"
+                      dataType="decimal"
+                      name="quote_volume" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[trades]"
+                      dataType="i4"
+                      name="trades" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[taker_buy_volume]"
+                      dataType="decimal"
+                      name="taker_buy_volume" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[taker_buy_quote]"
+                      dataType="decimal"
+                      name="taker_buy_quote" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].ExternalColumns[coin]"
+                      dataType="wstr"
+                      length="50"
+                      name="coin" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Load StgPriceDaily\StgPriceDaily"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="StgPriceDaily"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[StgPriceDaily]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Load StgPriceDaily\StgPriceDaily.Connections[OleDbConnection]"
+                  connectionManagerID="{903E27DF-2D68-4A6F-B609-A9E82572AAF4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[localhost.CryptoDW]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].Columns[date]"
+                      cachedDataType="dbDate"
+                      cachedName="date"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[full_date]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[date]" />
+                    <inputColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].Columns[open]"
+                      cachedDataType="decimal"
+                      cachedName="open"
+                      cachedScale="8"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[open_price]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[open]" />
+                    <inputColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].Columns[high]"
+                      cachedDataType="decimal"
+                      cachedName="high"
+                      cachedScale="8"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[high_price]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[high]" />
+                    <inputColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].Columns[low]"
+                      cachedDataType="decimal"
+                      cachedName="low"
+                      cachedScale="8"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[low_price]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[low]" />
+                    <inputColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].Columns[close]"
+                      cachedDataType="decimal"
+                      cachedName="close"
+                      cachedScale="8"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[close_price]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[close]" />
+                    <inputColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].Columns[volume]"
+                      cachedDataType="decimal"
+                      cachedName="volume"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[volume]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[volume]" />
+                    <inputColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].Columns[quote_volume]"
+                      cachedDataType="decimal"
+                      cachedName="quote_volume"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[quote_volume]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[quote_volume]" />
+                    <inputColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].Columns[trades]"
+                      cachedDataType="i4"
+                      cachedName="trades"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[trades_count]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[trades]" />
+                    <inputColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].Columns[taker_buy_volume]"
+                      cachedDataType="decimal"
+                      cachedName="taker_buy_volume"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[taker_buy_volume]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[taker_buy_volume]" />
+                    <inputColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].Columns[taker_buy_quote]"
+                      cachedDataType="decimal"
+                      cachedName="taker_buy_quote"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[taker_buy_quote]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[taker_buy_quote]" />
+                    <inputColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].Columns[coin]"
+                      cachedDataType="wstr"
+                      cachedLength="50"
+                      cachedName="coin"
+                      externalMetadataColumnId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[coin_symbol]"
+                      lineageId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output].Columns[coin]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[full_date]"
+                      dataType="dbDate"
+                      name="full_date" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[open_price]"
+                      dataType="numeric"
+                      name="open_price"
+                      precision="18"
+                      scale="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[high_price]"
+                      dataType="numeric"
+                      name="high_price"
+                      precision="18"
+                      scale="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[low_price]"
+                      dataType="numeric"
+                      name="low_price"
+                      precision="18"
+                      scale="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[close_price]"
+                      dataType="numeric"
+                      name="close_price"
+                      precision="18"
+                      scale="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[volume]"
+                      dataType="numeric"
+                      name="volume"
+                      precision="18"
+                      scale="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[quote_volume]"
+                      dataType="numeric"
+                      name="quote_volume"
+                      precision="18"
+                      scale="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[trades_count]"
+                      dataType="i4"
+                      name="trades_count" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[taker_buy_volume]"
+                      dataType="numeric"
+                      name="taker_buy_volume"
+                      precision="18"
+                      scale="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[taker_buy_quote]"
+                      dataType="numeric"
+                      name="taker_buy_quote"
+                      precision="18"
+                      scale="8" />
+                    <externalMetadataColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input].ExternalColumns[coin_symbol]"
+                      dataType="wstr"
+                      length="50"
+                      name="coin_symbol" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Load StgPriceDaily\StgPriceDaily.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Load StgPriceDaily\StgPriceDaily.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Load StgPriceDaily\StgPriceDaily.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Load StgPriceDaily\StgPriceDaily.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Load StgPriceDaily.Paths[Flat File Source Output]"
+              endId="Package\Load StgPriceDaily\StgPriceDaily.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\Load StgPriceDaily\Price.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="165.6,41.6"
+          Id="Package\Load StgPriceDaily"
+          TopLeft="99.7857144864238,26.9117646871141" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Load StgPriceDaily">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="100.8,41.6"
+          Id="Package\Load StgPriceDaily\Price"
+          TopLeft="234.999996498227,47.9999992847443" />
+        <NodeLayout
+          Size="139.2,41.6"
+          Id="Package\Load StgPriceDaily\StgPriceDaily"
+          TopLeft="275.99999588728,170.999997451901" />
+        <EdgeLayout
+          Id="Package\Load StgPriceDaily.Paths[Flat File Source Output]"
+          TopLeft="285.399996498227,89.5999992847443">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="60.1999993890524,81.3999981671572"
+              Start="0,0"
+              End="60.1999993890524,73.8999981671572">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.6999990835786" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36.6999990835786"
+                    Point2="0,40.6999990835786"
+                    Point3="4,40.6999990835786" />
+                  <mssgle:LineSegment
+                    End="56.1999993890524,40.6999990835786" />
+                  <mssgle:CubicBezierSegment
+                    Point1="56.1999993890524,40.6999990835786"
+                    Point2="60.1999993890524,40.6999990835786"
+                    Point3="60.1999993890524,44.6999990835786" />
+                  <mssgle:LineSegment
+                    End="60.1999993890524,73.8999981671572" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Load StgPriceDaily\StgPriceDaily">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
