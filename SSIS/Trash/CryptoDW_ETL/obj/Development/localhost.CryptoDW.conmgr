@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost.CryptoDW"
+  DTS:DTSID="{903E27DF-2D68-4A6F-B609-A9E82572AAF4}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost;Initial Catalog=CryptoDW;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-CryptoDW_ETL-{903E27DF-2D68-4A6F-B609-A9E82572AAF4}localhost.CryptoDW;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="localhost.CryptoSourceDB"
+  DTS:DTSID="{754E470B-ACD7-4F7D-884E-E0A9E381DDA7}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=localhost;Initial Catalog=CryptoSourceDB;Provider=SQLOLEDB.1;Integrated Security=SSPI;Application Name=SSIS-CryptoDW_ETL-{754E470B-ACD7-4F7D-884E-E0A9E381DDA7}localhost.CryptoSourceDB;Auto Translate=False;" />
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
