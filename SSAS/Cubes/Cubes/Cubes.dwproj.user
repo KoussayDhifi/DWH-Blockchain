@@ -3,7 +3,7 @@
     <Configuration>
       <Name>Development</Name>
       <Options>
-        <TargetServer>localhost</TargetServer>
+        <TargetServer>MOHSEN2</TargetServer>
         <TargetDatabase>Cubes</TargetDatabase>
         <StartObject>
           <ObjectId></ObjectId>

@@ -20,12 +20,12 @@
   </Cubes>
   <Dimensions>
     <ProjectItem>
-      <Name>Dim Coin.dim</Name>
-      <FullPath>Dim Coin.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
       <Name>Dim Date.dim</Name>
       <FullPath>Dim Date.dim</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Dim Coin.dim</Name>
+      <FullPath>Dim Coin.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Dim Mood.dim</Name>
@@ -34,10 +34,6 @@
     <ProjectItem>
       <Name>Dim Sentiment.dim</Name>
       <FullPath>Dim Sentiment.dim</FullPath>
-    </ProjectItem>
-    <ProjectItem>
-      <Name>Fact News Sentiment.dim</Name>
-      <FullPath>Fact News Sentiment.dim</FullPath>
     </ProjectItem>
     <ProjectItem>
       <Name>Dim Trade Type.dim</Name>

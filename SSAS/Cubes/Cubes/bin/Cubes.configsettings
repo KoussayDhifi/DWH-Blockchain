@@ -5,26 +5,23 @@
         <ID>Crypto DW</ID>
         <ConnectionString>Provider=SQLOLEDB.1;Data Source=mohsen2;Integrated Security=SSPI;Initial Catalog=CryptoDW_</ConnectionString>
         <ImpersonationInfo>
-          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateCurrentUser</ImpersonationMode>
+          <ImpersonationMode xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">ImpersonateServiceAccount</ImpersonationMode>
           <ImpersonationInfoSecurity xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">Unchanged</ImpersonationInfoSecurity>
         </ImpersonationInfo>
       </DataSource>
     </DataSources>
     <Dimensions>
       <Dimension>
-        <ID>Dim Coin</ID>
+        <ID>Dim Date</ID>
       </Dimension>
       <Dimension>
-        <ID>Dim Date</ID>
+        <ID>Dim Coin</ID>
       </Dimension>
       <Dimension>
         <ID>Dim Mood</ID>
       </Dimension>
       <Dimension>
         <ID>Dim Sentiment</ID>
-      </Dimension>
-      <Dimension>
-        <ID>Fact News Sentiment</ID>
       </Dimension>
       <Dimension>
         <ID>Dim Trade Type</ID>
