@@ -1,17 +1,17 @@
-﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="85ad626d-a2a9-4873-9f82-c1c26bb2814d" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f85b47f3-e66a-4b76-9c82-9b80112c51b6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Crypto DW</ID>
   <MeasureGroups>
     <MeasureGroup>
       <ID>Fact Blockchain Activity</ID>
       <Partitions>
-        <Partition dwd:design-time-name="33af33d7-0c43-498a-a2e9-934135aacdd6">
+        <Partition dwd:design-time-name="798e76dc-c62e-4c9a-8d19-b4e74f284fb5">
           <ID>Fact Blockchain Activity</ID>
           <Name>Fact Blockchain Activity</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="2b72e706-1377-4724-8652-aadf1340654b">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="898e35ed-2f6b-46b1-9508-03828aabef0d">
             <DataSourceViewID>Crypto DW</DataSourceViewID>
             <TableID>dbo_FactBlockchainActivity</TableID>
           </Source>
@@ -24,14 +24,14 @@
     <MeasureGroup>
       <ID>Fact Market Snapshot</ID>
       <Partitions>
-        <Partition dwd:design-time-name="e8b894eb-0491-4d61-aaab-09716cd51efb">
+        <Partition dwd:design-time-name="9fb46e0b-4d62-4790-b61f-727a83b9fa1e">
           <ID>Fact Market Snapshot</ID>
           <Name>Fact Market Snapshot</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="6f4bf3db-644e-491b-8d6c-09662e796785">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f7eb9929-1a1d-4bc1-806c-fd8ceff53592">
             <DataSourceViewID>Crypto DW</DataSourceViewID>
             <TableID>dbo_FactMarketSnapshot</TableID>
           </Source>
@@ -44,14 +44,14 @@
     <MeasureGroup>
       <ID>Fact Mood Index</ID>
       <Partitions>
-        <Partition dwd:design-time-name="994d4d29-7391-4369-b252-223334cc28a9">
+        <Partition dwd:design-time-name="329d8ead-15b8-4ef8-80b2-2d01c2a9fc41">
           <ID>Fact Mood Index</ID>
           <Name>Fact Mood Index</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="cf0f598b-9a34-4e2f-a911-cf67a9acbd4a">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f0be311c-08f3-49ab-88c4-2f74e537719a">
             <DataSourceViewID>Crypto DW</DataSourceViewID>
             <TableID>dbo_FactMoodIndex</TableID>
           </Source>
@@ -64,14 +64,14 @@
     <MeasureGroup>
       <ID>Fact News Sentiment</ID>
       <Partitions>
-        <Partition dwd:design-time-name="aebc089c-c206-4ca4-9a8e-e8d6e2dcc74e">
+        <Partition dwd:design-time-name="74ec36fc-6bbe-4fc7-96af-6271eb1c7849">
           <ID>Fact News Sentiment</ID>
           <Name>Fact News Sentiment</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="881553ea-729a-4203-bd98-90d1036d78bf">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="21b436e6-7cba-4adf-a388-346db11c0e96">
             <DataSourceViewID>Crypto DW</DataSourceViewID>
             <TableID>dbo_FactNewsSentiment</TableID>
           </Source>
@@ -84,14 +84,14 @@
     <MeasureGroup>
       <ID>Fact Price Daily</ID>
       <Partitions>
-        <Partition dwd:design-time-name="96ede940-1aaa-4fae-b3ed-8e58c3ae17d0">
+        <Partition dwd:design-time-name="307268b5-b69e-4fe9-b5ef-47f3486786af">
           <ID>Fact Price Daily</ID>
           <Name>Fact Price Daily</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="a2776c9c-c1a5-4702-a5a2-3610a51719e0">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="498b922f-74e1-424e-85f7-6bac82320a7c">
             <DataSourceViewID>Crypto DW</DataSourceViewID>
             <TableID>dbo_FactPriceDaily</TableID>
           </Source>
@@ -104,14 +104,14 @@
     <MeasureGroup>
       <ID>Fact Trades</ID>
       <Partitions>
-        <Partition dwd:design-time-name="2beb9b51-f3a6-4ba2-a768-d5f7ab21225d">
+        <Partition dwd:design-time-name="c7031fe5-6dbf-4a2e-ba06-cb8a4dc28763">
           <ID>Fact Trades</ID>
           <Name>Fact Trades</Name>
           <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
           <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
           <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
           <State>Unprocessed</State>
-          <Source xsi:type="DsvTableBinding" dwd:design-time-name="c02a079e-eb90-4d04-a6d6-e52b07b1aca5">
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="f5bb4376-245c-4a4e-97de-24e0fc6a52a1">
             <DataSourceViewID>Crypto DW</DataSourceViewID>
             <TableID>dbo_FactTrades</TableID>
           </Source>

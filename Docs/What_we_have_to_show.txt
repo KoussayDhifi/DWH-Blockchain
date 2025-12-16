@@ -1,0 +1,4 @@
+- Prices over time of ETH and BTC
+- Volatility of ETH and BTC
+- Prices correlation with trade volume and market cap
+- How many trades active per day
