@@ -8,12 +8,12 @@
   </Database>
   <Cubes>
     <ProjectItem>
-      <Name>Crypto DW.cube</Name>
-      <FullPath>Crypto DW.cube</FullPath>
+      <Name>NewCube.cube</Name>
+      <FullPath>NewCube.cube</FullPath>
       <Dependencies>
         <ProjectItem>
-          <Name>Crypto DW.partitions</Name>
-          <FullPath>Crypto DW.partitions</FullPath>
+          <Name>NewCube.partitions</Name>
+          <FullPath>NewCube.partitions</FullPath>
         </ProjectItem>
       </Dependencies>
     </ProjectItem>

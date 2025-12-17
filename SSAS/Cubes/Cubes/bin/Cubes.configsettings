@@ -29,7 +29,7 @@
     </Dimensions>
     <Cubes>
       <Cube>
-        <ID>Crypto DW</ID>
+        <ID>NewCube</ID>
         <MeasureGroups>
           <MeasureGroup>
             <ID>Fact Blockchain Activity</ID>

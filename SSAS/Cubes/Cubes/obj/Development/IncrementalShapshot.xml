@@ -33,44 +33,44 @@
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>Hyv3EI2+B8UsScp92EjoPRyhAEs=12/16/2025 5:05:00 PM12/16/2025 5:04:10 PM</TimeStamp>
+        <TimeStamp>DPPTzAOVNOdqDDzfpK9SgYMwhEw=12/17/2025 12:54:55 AM12/17/2025 12:20:49 AM</TimeStamp>
         <ID>
           <String>Dim Date</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>UiNi9TOlzl83RbRZEYlAsKicCqo=12/16/2025 5:04:10 PM12/16/2025 5:04:10 PM</TimeStamp>
+        <TimeStamp>SWTmKu+efJxOjNfAF0jvTia/85o=12/17/2025 12:29:35 AM12/17/2025 12:20:49 AM</TimeStamp>
         <ID>
           <String>Dim Coin</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>f2cnxylQ1L13if4uXbNvdW3Eawc=12/16/2025 5:04:10 PM12/16/2025 5:04:10 PM</TimeStamp>
+        <TimeStamp>2kB+7HAedRkWtY9vL+PDpCeXhqo=12/17/2025 12:29:42 AM12/17/2025 12:20:49 AM</TimeStamp>
         <ID>
           <String>Dim Mood</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>M2LnAwXpB7gIufJCOEpkXpTXNI4=12/16/2025 5:04:10 PM12/16/2025 5:04:10 PM</TimeStamp>
+        <TimeStamp>29YyK0wcLOMqeK5KrA1hARm1xg4=12/17/2025 12:43:43 AM12/17/2025 12:20:49 AM</TimeStamp>
         <ID>
           <String>Dim Sentiment</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Dimension</Type>
-        <TimeStamp>LtbmKicdMEU/Hv3D8SgVUVTMvoA=12/16/2025 5:04:10 PM12/16/2025 5:04:10 PM</TimeStamp>
+        <TimeStamp>S3cGUob8R2/6AvRppi6QRlupfsU=12/17/2025 12:29:51 AM12/17/2025 12:20:49 AM</TimeStamp>
         <ID>
           <String>Dim Trade Type</String>
         </ID>
       </ObjectSnapshot>
       <ObjectSnapshot>
         <Type>Microsoft.AnalysisServices.Cube</Type>
-        <TimeStamp>3CuHCFiksfVlGl5e7ybUcu1zbSg=12/16/2025 5:05:00 PM12/16/2025 5:04:10 PMoWMLGOl194mGokShNdcjWEW7k3M=12/16/2025 5:04:10 PM12/16/2025 5:04:10 PM</TimeStamp>
+        <TimeStamp>Gej9HEmFaVqRaDS4x0IGiEDp8Lo=12/17/2025 12:43:43 AM12/17/2025 12:20:49 AMHC1w2btrWqqd/lYCimkA/0veVfc=12/17/2025 12:20:49 AM12/17/2025 12:20:49 AM</TimeStamp>
         <ID>
-          <String>Crypto DW</String>
+          <String>NewCube</String>
         </ID>
       </ObjectSnapshot>
     </ObjectSnapshots>
@@ -85,5 +85,5 @@
   </Snapshot>
   <AssemblyLocations />
   <ProcessingComplete>true</ProcessingComplete>
-  <LastDeployed>2025-12-16T16:05:03.86Z</LastDeployed>
+  <LastDeployed>2025-12-16T23:55:24.523333Z</LastDeployed>
 </DeploymentSnapshot>

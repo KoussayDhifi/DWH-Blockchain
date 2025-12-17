@@ -2,3 +2,7 @@
 - Volatility of ETH and BTC
 - Prices correlation with trade volume and market cap
 - How many trades active per day
+
+
+BTC = #F7931A
+ETH = #33CCCC
